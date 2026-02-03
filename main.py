@@ -42,7 +42,7 @@ for game in free_games:
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
-        body=f"Free Game Alert!\n{game["game_name"]} is free on Epic Games Store until {game["end_date"]}!\n{game["description"]}",
+        body=f"Free Game Alert!\n{game["game_name"]} is free on Epic Games Store until {game["end_date"]}!\n{game["game_description"]}",
         from_=twilio_number,
         to=my_number,
     )
