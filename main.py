@@ -20,7 +20,7 @@ for game in games:
                 game_name = game["title"]
                 game_description = game["description"]
                 end_date = game["promotions"]["promotionalOffers"][0]["promotionalOffers"][0]["endDate"]
-                end_date = end_date[0:9]
+                end_date = end_date[0:10]
                 free_games.append({
                     "game_name" : game_name,
                     "game_description" : game_description,
